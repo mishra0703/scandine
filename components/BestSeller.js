@@ -13,8 +13,12 @@ export default function BestSeller() {
       const res = await fetch("/api/items");
       const data = await res.json();
 
-      const best = data.filter((item) => item.isAvailable).slice(0, 5);
+      const best = data
+        .filter((item) => item.isAvailable && item.isBestSeller)
+        .slice(0, 5);
+        
       setItems(best);
+      setLoading(false);
     }
 
     fetchItems();
@@ -34,6 +38,14 @@ export default function BestSeller() {
         <span></span>
         <span></span>
       </div>
+    );
+  }
+
+  if (!loading && items.length === 0) {
+    return (
+      <p className="text-center text-lg font-medium my-10">
+        Every item is best at our Cafe
+      </p>
     );
   }
 
