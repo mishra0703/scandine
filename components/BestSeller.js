@@ -16,7 +16,7 @@ export default function BestSeller() {
       const best = data
         .filter((item) => item.isAvailable && item.isBestSeller)
         .slice(0, 5);
-        
+
       setItems(best);
       setLoading(false);
     }
@@ -43,7 +43,7 @@ export default function BestSeller() {
 
   if (!loading && items.length === 0) {
     return (
-      <p className="text-center text-lg font-medium my-10">
+      <p className="text-center text-xl font-semibold my-10 numans">
         Every item is best at our Cafe
       </p>
     );
