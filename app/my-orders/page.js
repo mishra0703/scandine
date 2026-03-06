@@ -170,13 +170,13 @@ export default function MyOrders() {
                     <p className="text-sm text-gray-500 flex items-center gap-1">
                       {item.itemId?.isVeg ? (
                         <span className="flex items-center gap-1">
-                          <img src="/veg.svg" className="w-3 h-3" alt="Veg" />
+                          <img src="/Veg.svg" className="w-3 h-3" alt="Veg" />
                           Veg
                         </span>
                       ) : (
                         <span className="flex items-center gap-1">
                           <img
-                            src="/non-veg.svg"
+                            src="/Non-veg.svg"
                             className="w-3 h-3"
                             alt="Non-Veg"
                           />
@@ -236,7 +236,7 @@ export default function MyOrders() {
                           {item.itemId?.isVeg ? (
                             <span className="flex items-center gap-1">
                               <img
-                                src="/veg.svg"
+                                src="/Veg.svg"
                                 className="w-3 h-3 grayscale"
                                 alt="Veg"
                               />
@@ -245,7 +245,7 @@ export default function MyOrders() {
                           ) : (
                             <span className="flex items-center gap-1">
                               <img
-                                src="/non-veg.svg"
+                                src="/Non-veg.svg"
                                 className="w-3 h-3 grayscale"
                                 alt="Non-Veg"
                               />

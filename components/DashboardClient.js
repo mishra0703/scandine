@@ -349,8 +349,8 @@ export default function DashboardClient() {
                                   <img
                                     src={
                                       item.itemId.isVeg
-                                        ? "/veg.svg"
-                                        : "/non-veg.svg"
+                                        ? "/Veg.svg"
+                                        : "/Non-veg.svg"
                                     }
                                     className="w-3 h-3"
                                     alt="Veg Mark"

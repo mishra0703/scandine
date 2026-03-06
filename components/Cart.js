@@ -234,13 +234,13 @@ const Cart = ({ isOpen, onClose, orderCount, setOrderCount, items }) => {
                         <span>•</span>
                         {item.isVeg ? (
                           <span className="flex items-center gap-1">
-                            <img src="/veg.svg" className="w-3 h-3" alt="Veg" />
+                            <img src="/Veg.svg" className="w-3 h-3" alt="Veg" />
                             Veg
                           </span>
                         ) : (
                           <span className="flex items-center gap-1">
                             <img
-                              src="/non-veg.svg"
+                              src="/Non-veg.svg"
                               className="w-3 h-3"
                               alt="Non-Veg"
                             />

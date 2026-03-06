@@ -230,13 +230,13 @@ const OrderPageContent = () => {
                   <li className=" Qty">{item.quantity}</li>
                   {item.isVeg ? (
                     <li className=" Category flex gap-1 items-center">
-                      <img src="/veg.svg" className="w-3 h-3" alt="Veg Mark" />
+                      <img src="/Veg.svg" className="w-3 h-3" alt="Veg Mark" />
                       <span>Veg</span>
                     </li>
                   ) : (
                     <li className=" Category flex gap-1 items-center">
                       <img
-                        src="/non-veg.svg"
+                        src="/Non-veg.svg"
                         className="w-3 h-3"
                         alt="Non-Veg Mark"
                       />
